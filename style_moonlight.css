@@ -5,6 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+
 }
 body
 {
@@ -99,6 +101,7 @@ section img#mountain_front
 #text
 {
     position: absolute;
+    right: -350px;
     color: #fff;
     white-space: nowrap;
     font-size: 7.5vw;
@@ -116,4 +119,20 @@ section img#mountain_front
     font-size: 1.5em;
     z-index: 9;
     transform: translateY(200px);
+  }
+  .sec
+  {
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+  }
+  .sec h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff; 
+  }
+  .sec p
+  {
+    font-size: 1.2em;
+    color: #fff;
   }

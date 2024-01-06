@@ -9,7 +9,7 @@
     </head>
     <body>
         <header>
-            <a href="#" class="logo"> LOGO</a>
+            <a href="#" class="logo"> SEJAL LOTLIKER</a>
             <ul>
                 <li> <a href='#' class="active">Home</a></li>
                 <li> <a href='#'>About</a></li>
@@ -21,10 +21,61 @@
             <img src="stars.png" id="stars">
             <img src="moon.png" id="moon">
             <img src="mountains_behind.png" id="mountains_behind">
-            <h2 id="text"> Moon-Light </h2>
+            <h2 id="text"> MOON LIGHT </h2>
             <a href="#sec" id="btn"> Explore</a>
             <img src="mountains_front.png" id="mountains_front">
         </section>
+        <div class="sec" id="sec">
+            <h2> Parallax Scrolling Effects</h2>
+            <p>
+            Earth's Moon is the brightest and largest object in our night sky. 
+            The Moon makes Earth a more livable planet by moderating our home planet's wobble on its axis, 
+            leading to a relatively stable climate. It also causes tides, creating a rhythm that has guided 
+            humans for thousands of years. The Moon was likely formed after a Mars-sized body collided with 
+            Earth several billion years ago.Earth's only natural satellite is simply called "the Moon" because
+             people didn't know other moons existed until Galileo Galilei discovered four moons orbiting 
+             Jupiter in 1610. In Latin, the Moon was called Luna, which is the main adjective for all things
+              Moon-related: lunar.<br><br>
+              Moon, Earth’s sole natural satellite and nearest large celestial body. Known since prehistoric 
+              times, it is the brightest object in the sky after the Sun. It is designated by the symbol ☽. 
+              Its name in English, like that of Earth, is of Germanic and Old English derivation.The Moon’s 
+              desolate beauty has been a source of fascination and curiosity throughout history and has inspired 
+              a rich cultural and symbolic tradition. In past civilizations the Moon was regarded as a deity, 
+              its dominion dramatically manifested in its rhythmic control over the tides. <br><br> Ancient lore and legend tell of the power of the Moon to instill spells with magic, to
+              transform humans into beasts, and to send people’s behaviour swaying perilously between sanity and 
+              lunacy (from the Latin luna, “Moon”). Poets and composers were invoking the Moon’s romantic charms 
+              and its darker side, and writers of fiction were conducting their readers on speculative lunar
+               journeys long before Apollo astronauts, in orbit above the Moon, sent back photographs of the 
+               reality that human eyes were witnessing for the first time. Centuries of observation and scientific
+                investigation have been centred on the nature and origin of the Moon. Early studies of the Moon’s 
+                motion and position allowed the prediction of tides and led to the development of calendars. <br><br>
+            </p>
+        </div>
+
+        <script>
+            let stars= document.getElementById('stars');
+            let moon= document.getElementById('moon');
+            let mountains_behind= document.getElementById('mountains_behind');
+            let text= document.getElementById('text');
+            let btn= document.getElementById('btn');
+            let mountains_front= document.getElementById('mountains_front');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value*0.25 + 'px';
+                moon.style.top = value*1.05 + 'px';
+                mountains_behind.style.top = value*0.5 + 'px';
+                mountains_front.style.top = value*0+ 'px';
+                text.style.marginRight= value*4+ 'px';
+                text.style.marginTop= value*1.5+ 'px';
+                btn.style.marginTop= value*1.5+ 'px';
+            }
+            )
+
+
+
+        </script>
+
 
     </body>
 </html>
